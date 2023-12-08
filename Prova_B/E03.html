@@ -11,11 +11,27 @@
     */
 
     //Entrada
-
-
+    let mensagem;
+    const contrato = prompt('Insira seu contrato de trabalho - Menor Aprendiz (MA)  - Estagiário (ES)- CLT (CLT): 45 horas  - Pessoa Jurídica (PJ)');
     //Processamento
-
-
+    switch (contrato){
+        case 'MA' :
+        mensagem = '20 horas';
+        break; 
+        case 'ES' :
+            mensagem = '30 horas';
+            break;
+         case 'CLT' :
+            mensagem = '45 horas';
+            break;
+        case 'PJ' :
+            mensagem = '45 horas';
+            break;
+        default :
+        mensagem = 'invalido';
+        break;
+    }
+alert(mensagem);
     //Saída
 
 

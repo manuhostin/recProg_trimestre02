@@ -10,7 +10,26 @@
     */
 
     //Entrada
+    const mensalidade = Number(prompt('insira o valor da mensalidade'));
+    const dia = prompt('insira o dia do pagamento');
+    let mensagem; 
 
+    if (dia <= 5) {
+        mensagem = mensalidade - (mensalidade * 0.15);
+    }
+
+    if (dia <= 10 && dia > 5) {
+        mensagem = mensalidade - (mensalidade * 0.10);
+    }
+
+    if (dia <= 15 && dia > 10 ) {
+        mensagem = mensalidade - (mensalidade * 0.05);
+    }
+
+    if (dia > 15) {
+        mensagem = mensalidade;
+    }
+    alert(`sua mensalidade é R$${mensagem.toFixed(2)}`);
 
     //Processamento
 

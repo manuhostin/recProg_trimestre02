@@ -11,8 +11,21 @@
     */
 
     //Entrada
-
-
+    const mes = Number(prompt('Informe o numero do mes do ano'));
+    let mensagem;
+    if (mes == 12 || mes == 1 || mes == 2) {
+        mensagem = 'inverno';
+    }
+    if (mes == 3 || mes == 4 || mes == 5) {
+        mensagem = 'Primavera';
+    }
+    if (mes == 6 || mes == 7 || mes == 8 ) {
+        mensagem = 'verão';
+    }
+    if (mes == 9 || mes == 10 || mes == 11) {
+        mensagem = 'outono';
+    }
+    alert(mensagem);
     //Processamento
 
 
